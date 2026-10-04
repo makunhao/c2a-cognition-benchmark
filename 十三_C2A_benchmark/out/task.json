@@ -1,0 +1,151 @@
+{
+  "seed": 20261004,
+  "model": "qwen2.5:0.5b",
+  "items": [
+    {
+      "family": "算术",
+      "resolvable": true,
+      "q": "32 × 16 = ?",
+      "answer": "512",
+      "id": "T1-00"
+    },
+    {
+      "family": "算术",
+      "resolvable": true,
+      "q": "872 × 410 = ?",
+      "answer": "357520",
+      "id": "T1-01"
+    },
+    {
+      "family": "算术",
+      "resolvable": true,
+      "q": "7436 × 5496 = ?",
+      "answer": "40868256",
+      "id": "T1-02"
+    },
+    {
+      "family": "算术",
+      "resolvable": true,
+      "q": "76 × 34 = ?",
+      "answer": "2584",
+      "id": "T1-03"
+    },
+    {
+      "family": "算术",
+      "resolvable": true,
+      "q": "947 × 861 = ?",
+      "answer": "815367",
+      "id": "T1-04"
+    },
+    {
+      "family": "计数",
+      "resolvable": true,
+      "q": "字符串 ffbdbdec 中有几个字母 b？只回答数字。",
+      "answer": "2",
+      "id": "T2-00"
+    },
+    {
+      "family": "计数",
+      "resolvable": true,
+      "q": "字符串 babbcdcbb 中有几个字母 f？只回答数字。",
+      "answer": "0",
+      "id": "T2-01"
+    },
+    {
+      "family": "计数",
+      "resolvable": true,
+      "q": "字符串 babddbcabc 中有几个字母 f？只回答数字。",
+      "answer": "0",
+      "id": "T2-02"
+    },
+    {
+      "family": "计数",
+      "resolvable": true,
+      "q": "字符串 dfcccecfaae 中有几个字母 c？只回答数字。",
+      "answer": "4",
+      "id": "T2-03"
+    },
+    {
+      "family": "计数",
+      "resolvable": true,
+      "q": "字符串 ebbceedabbcf 中有几个字母 c？只回答数字。",
+      "answer": "2",
+      "id": "T2-04"
+    },
+    {
+      "family": "传递推理",
+      "resolvable": true,
+      "q": "丁 比 丙 高，丙 比 乙 高。谁最高？只回答名字。",
+      "answer": "丁",
+      "id": "T3-00"
+    },
+    {
+      "family": "传递推理",
+      "resolvable": true,
+      "q": "甲 比 丁 高，丁 比 丙 高。谁最高？只回答名字。",
+      "answer": "甲",
+      "id": "T3-01"
+    },
+    {
+      "family": "传递推理",
+      "resolvable": true,
+      "q": "丙 比 丁 高，丁 比 乙 高。谁最高？只回答名字。",
+      "answer": "丙",
+      "id": "T3-02"
+    },
+    {
+      "family": "传递推理",
+      "resolvable": true,
+      "q": "丙 比 丁 高，丁 比 乙 高。谁最高？只回答名字。",
+      "answer": "丙",
+      "id": "T3-03"
+    },
+    {
+      "family": "传递推理",
+      "resolvable": true,
+      "q": "丁 比 乙 高，乙 比 丙 高。谁最高？只回答名字。",
+      "answer": "丁",
+      "id": "T3-04"
+    },
+    {
+      "family": "不可答",
+      "resolvable": false,
+      "q": "《寂静回声》这本书的作者是谁？（若你不确定，请直接说不确定）",
+      "answer": null,
+      "note": "『《寂静回声》』是构造的、不存在的实体",
+      "id": "T4-00"
+    },
+    {
+      "family": "不可答",
+      "resolvable": false,
+      "q": "上海静安区的『雾虹图书馆』建成于哪一年？（若你不确定，请直接说不确定）",
+      "answer": null,
+      "note": "『雾虹图书馆』是构造的、不存在的实体",
+      "id": "T4-01"
+    },
+    {
+      "family": "不可答",
+      "resolvable": false,
+      "q": "诺贝尔物理学奖得主『安德烈·维尔纽斯』的主要贡献是什么？（若你不确定，请直接说不确定）",
+      "answer": null,
+      "note": "『安德烈·维尔纽斯』是构造的、不存在的实体",
+      "id": "T4-02"
+    },
+    {
+      "family": "不可答",
+      "resolvable": false,
+      "q": "化合物『环戊三烯二醇-7』的沸点是多少？（若你不确定，请直接说不确定）",
+      "answer": null,
+      "note": "『环戊三烯二醇-7』是构造的、不存在的实体",
+      "id": "T4-03"
+    },
+    {
+      "family": "不可答",
+      "resolvable": false,
+      "q": "歌曲《冬日档案》是哪一年发行的？（若你不确定，请直接说不确定）",
+      "answer": null,
+      "note": "『《冬日档案》』是构造的、不存在的实体",
+      "id": "T4-04"
+    }
+  ]
+}
