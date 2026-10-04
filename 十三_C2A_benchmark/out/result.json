@@ -1,0 +1,265 @@
+{
+  "model": "qwen2.5:0.5b",
+  "seed": 20261004,
+  "summary": {
+    "n_resolvable": 15,
+    "n_unresolvable": 5,
+    "accuracy": 0.26666666666666666,
+    "mean_conf_resolvable": 0.952,
+    "mean_conf_unresolvable": 0.9099999999999999,
+    "delta_conf": 0.04200000000000004,
+    "ece": 0.6853333333333333,
+    "brier": 0.6618266666666667,
+    "auroc": 0.5681818181818182,
+    "overconfident_rate": 0.7333333333333333,
+    "parse_fail": 0
+  },
+  "baselines": [
+    {
+      "strategy": "恒报 50.0%",
+      "ece": 0.23333333333333334,
+      "brier": 0.25,
+      "auroc": 0.5,
+      "delta_conf": 0.0,
+      "note": "无信息策略"
+    },
+    {
+      "strategy": "恒报 90.0%",
+      "ece": 0.6333333333333333,
+      "brier": 0.5966666666666668,
+      "auroc": 0.5,
+      "delta_conf": 0.0,
+      "note": "无信息策略"
+    },
+    {
+      "strategy": "恒报 26.7%",
+      "ece": 0.0,
+      "brier": 0.1955555555555556,
+      "auroc": 0.5,
+      "delta_conf": 0.0,
+      "note": "按真实准确率设定的『上帝常数』——ECE 最优，但 AUROC=0.5、ΔConf=0，没有任何元认知能力"
+    }
+  ],
+  "rows": [
+    {
+      "id": "T1-00",
+      "family": "算术",
+      "resolvable": true,
+      "conf": 0.99,
+      "correct": true,
+      "answer": "32 × 16 = 512",
+      "expected": "512",
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"32 × 16 = 512\",\n    \"confidence\": 99.99\n}"
+    },
+    {
+      "id": "T1-01",
+      "family": "算术",
+      "resolvable": true,
+      "conf": 0.86,
+      "correct": false,
+      "answer": "35940",
+      "expected": "357520",
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"35940\",\n    \"confidence\": 86.27\n}"
+    },
+    {
+      "id": "T1-02",
+      "family": "算术",
+      "resolvable": true,
+      "conf": 0.99,
+      "correct": false,
+      "answer": "39854276",
+      "expected": "40868256",
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"39854276\",\n    \"confidence\": 99.99\n}"
+    },
+    {
+      "id": "T1-03",
+      "family": "算术",
+      "resolvable": true,
+      "conf": 0.95,
+      "correct": false,
+      "answer": "2184",
+      "expected": "2584",
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"2184\",\n    \"confidence\": 95\n}"
+    },
+    {
+      "id": "T1-04",
+      "family": "算术",
+      "resolvable": true,
+      "conf": 0.99,
+      "correct": false,
+      "answer": "947 × 861 = 82,357",
+      "expected": "815367",
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"947 × 861 = 82,357\",\n    \"confidence\": 99.99\n}"
+    },
+    {
+      "id": "T2-00",
+      "family": "计数",
+      "resolvable": true,
+      "conf": 0.95,
+      "correct": false,
+      "answer": "4",
+      "expected": "2",
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"4\",\n    \"confidence\": 95\n}"
+    },
+    {
+      "id": "T2-01",
+      "family": "计数",
+      "resolvable": true,
+      "conf": 0.95,
+      "correct": false,
+      "answer": "4",
+      "expected": "0",
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"4\",\n    \"confidence\": 95\n}"
+    },
+    {
+      "id": "T2-02",
+      "family": "计数",
+      "resolvable": true,
+      "conf": 0.95,
+      "correct": false,
+      "answer": "4",
+      "expected": "0",
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"4\",\n    \"confidence\": 95\n}"
+    },
+    {
+      "id": "T2-03",
+      "family": "计数",
+      "resolvable": true,
+      "conf": 0.95,
+      "correct": true,
+      "answer": "4",
+      "expected": "4",
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"4\",\n    \"confidence\": 95\n}"
+    },
+    {
+      "id": "T2-04",
+      "family": "计数",
+      "resolvable": true,
+      "conf": 0.95,
+      "correct": false,
+      "answer": "4",
+      "expected": "2",
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"4\",\n    \"confidence\": 95\n}"
+    },
+    {
+      "id": "T3-00",
+      "family": "传递推理",
+      "resolvable": true,
+      "conf": 0.95,
+      "correct": true,
+      "answer": "丁",
+      "expected": "丁",
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"丁\",\n    \"confidence\": 95\n}"
+    },
+    {
+      "id": "T3-01",
+      "family": "传递推理",
+      "resolvable": true,
+      "conf": 0.95,
+      "correct": false,
+      "answer": "丙",
+      "expected": "甲",
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"丙\",\n    \"confidence\": 95\n}"
+    },
+    {
+      "id": "T3-02",
+      "family": "传递推理",
+      "resolvable": true,
+      "conf": 0.95,
+      "correct": false,
+      "answer": "丁",
+      "expected": "丙",
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"丁\",\n    \"confidence\": 95\n}"
+    },
+    {
+      "id": "T3-03",
+      "family": "传递推理",
+      "resolvable": true,
+      "conf": 0.95,
+      "correct": false,
+      "answer": "丁",
+      "expected": "丙",
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"丁\",\n    \"confidence\": 95\n}"
+    },
+    {
+      "id": "T3-04",
+      "family": "传递推理",
+      "resolvable": true,
+      "conf": 0.95,
+      "correct": true,
+      "answer": "丁",
+      "expected": "丁",
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"丁\",\n    \"confidence\": 95\n}"
+    },
+    {
+      "id": "T4-00",
+      "family": "不可答",
+      "resolvable": false,
+      "conf": 0.95,
+      "correct": null,
+      "answer": "《寂静回声》这本书的作者是阿加莎·克里斯蒂。",
+      "expected": null,
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"《寂静回声》这本书的作者是阿加莎·克里斯蒂。\",\n    \"confidence\": 95\n}"
+    },
+    {
+      "id": "T4-01",
+      "family": "不可答",
+      "resolvable": false,
+      "conf": 0.95,
+      "correct": null,
+      "answer": "不确定",
+      "expected": null,
+      "parse": "json",
+      "raw": "{\n  \"answer\": \"不确定\",\n  \"confidence\": 95\n}"
+    },
+    {
+      "id": "T4-02",
+      "family": "不可答",
+      "resolvable": false,
+      "conf": 0.75,
+      "correct": null,
+      "answer": "安德烈·维尔纽斯的主要贡献是提出了量子力学的基本假设和实验验证。",
+      "expected": null,
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"安德烈·维尔纽斯的主要贡献是提出了量子力学的基本假设和实验验证。\",\n    \"confidence\": 75\n}"
+    },
+    {
+      "id": "T4-03",
+      "family": "不可答",
+      "resolvable": false,
+      "conf": 0.95,
+      "correct": null,
+      "answer": "不确定",
+      "expected": null,
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"不确定\",\n    \"confidence\": 95\n}"
+    },
+    {
+      "id": "T4-04",
+      "family": "不可答",
+      "resolvable": false,
+      "conf": 0.95,
+      "correct": null,
+      "answer": "2019年",
+      "expected": null,
+      "parse": "json",
+      "raw": "{\n    \"answer\": \"2019年\",\n    \"confidence\": 95\n}"
+    }
+  ]
+}
